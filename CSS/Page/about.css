@@ -1,6 +1,6 @@
 .abouthero {
     color: white;
-    background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), url('https://lh3.googleusercontent.com/p/AF1QipPmy5c73bl-7ITal_fYjnpzlB0aWTnH-UY6690=s680-w680-h510-rw') no-repeat center center/cover;
+    background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), url('../../assets/images/interior.JPEG') no-repeat center center/cover;
     height: 495px;
     display: flex;
     justify-content: center;
