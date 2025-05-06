@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition, all 0.3s ease); /* Added fallback */
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-heading, sans-serif); /* Added fallback */
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e04b0b;
+  transform: translateY(-3px); /* Unified direction */
+  box-shadow: var(--shadow, 0 4px 12px rgba(0, 0, 0, 0.2)); /* Added fallback */
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #0f0f1f;
+  transform: translateY(-3px); /* Match hover style */
+  box-shadow: var(--shadow, 0 4px 12px rgba(0, 0, 0, 0.2)); /* Added fallback */
+}
+
+/* Utility class */
+.text-center {
+  text-align: center;
+}

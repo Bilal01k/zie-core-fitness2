@@ -1,0 +1,448 @@
+.servicehero {
+    color: white;
+    background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)),
+                url('../images/in1.jpeg') no-repeat center center/cover;
+    background-color: #1a1a2e;
+    height: 495px;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    align-items: center;
+    text-align: center;
+}
+
+.service.title {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .service.title {
+        font-size: 36px;
+    }
+    .servicehero {
+        height: 350px;
+        padding-top: 60px;
+    }
+}
+
+
+
+.services {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+/* Grid layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Card styling */
+.services-card {
+    background-color: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-height: 390px;
+}
+
+.services-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image container */
+.services-img {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image itself */
+.services-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image zoom on hover */
+.services-card:hover .services-img img {
+    transform: scale(1.1);
+}
+
+/* Text content */
+.services-content {
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spread out title and paragraph */
+    align-items: center;
+    height: calc(100% - 200px); /* Subtract image height */
+}
+
+.services-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+.services-content p {
+    margin-bottom: 0;
+    color: #555;
+    line-height: 1.6;
+    max-width: 280px;
+    text-align: center;
+    hyphens: auto;
+    word-break: break-word;
+    padding: 0 1rem;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Stack cards in a single column */
+    }
+
+    .services-card {
+        min-height: auto; /* Allow cards to adjust in height */
+    }
+
+    .services-img {
+        height: 180px; /* Adjust image height on smaller screens */
+    }
+
+    .services-content h3 {
+        font-size: 1.4rem; /* Adjust heading size */
+    }
+
+    .services-content p {
+        font-size: 1rem; /* Adjust paragraph size */
+        max-width: 100%; /* Allow text to use the entire width */
+    }
+}
+
+
+
+.personal-training-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title span {
+    color: #ff6b00;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #555; /* Improved readability */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.training-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.training-image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    height: 500px;
+}
+
+.training-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+
+.training-image:hover img {
+    transform: scale(1.03);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 20px;
+    color: white;
+}
+
+.overlay-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.overlay-content i {
+    font-size: 1.5rem;
+    color: #ff6b00;
+}
+
+.training-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.training-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefit-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.benefit-icon {
+    font-size: 1.8rem;
+    color: #ff6b00;
+    flex-shrink: 0;
+}
+
+.benefit-text h3 {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.benefit-text p {
+    color: #444; /* Darker text for readability */
+    font-size: 1rem;
+}
+
+.training-cta {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.training-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ff6b00;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.cta-button:hover {
+    background: #ff8c00;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+    font-size: 1rem;
+}
+
+.certification-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #ff6b00;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .training-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .training-image {
+        height: 400px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .training-benefits {
+        gap: 10px;
+    }
+
+    .benefit-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-icon {
+        font-size: 2rem;
+    }
+
+    .benefit-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .benefit-text p {
+        font-size: 0.9rem;
+    }
+}
+
+
+.section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.section:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for better readability */
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #ff4d4d;
+}
+
+.story-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row-reverse; /* This swaps text and image */
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555; /* Slightly lighter color for readability */
+}
+
+.story-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .story-content {
+        flex-direction: column; /* Stack text and image vertically */
+        gap: 30px;
+    }
+
+    .story-image {
+        height: 400px; /* Adjust image height for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .story-header h2 {
+        font-size: 2.5rem; /* Adjust heading font size */
+    }
+
+    .story-text {
+        font-size: 1rem; /* Adjust text for better readability */
+    }
+
+    .story-image {
+        width: 100%; /* Ensure the image is responsive */
+    }
+}
+
+@media (max-width: 576px) {
+    .section-header h2 {
+        font-size: 2rem; /* Smaller heading for small devices */
+    }
+
+    .story-content {
+        padding: 20px;
+    }
+
+    .story-text {
+        font-size: 0.9rem; /* Slightly smaller text for very small screens */
+    }
+}
+
