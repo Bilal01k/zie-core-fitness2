@@ -1,23 +1,19 @@
 class SpecialHeader extends HTMLElement {
   connectedCallback() {
-    const path = window.location.pathname;
-    const isInPagesFolder = path.includes('/pages/');
-    const prefix = isInPagesFolder ? '../' : '';
-
     this.innerHTML = `
       <header id="header">
         <div class="container">
           <nav class="navbar">
-            <a href="${prefix}index.html" class="logo">
-              Zie core <span>Fitness</span>
+            <a href="/index.html" class="logo">
+              Zie Core <span>Fitness</span>
               <p class="tagline">UNISEX GYM</p>
             </a>
             <ul class="nav-links">
-              <li><a href="${prefix}index.html#location">Location</a></li>
-              <li><a href="${prefix}pages/about.html">About</a></li>
-              <li><a href="${prefix}pages/service.html">Services</a></li>
-              <li><a href="${prefix}pages/ladies-hours.html">Ladies' Hours</a></li>
-              <li><a href="${prefix}pages/contactus.html">Contact</a></li>
+              <li><a href="/index.html#location">Location</a></li>
+              <li><a href="/pages/about.html">About</a></li>
+              <li><a href="/pages/service.html">Services</a></li>
+              <li><a href="/pages/ladies-hours.html">Ladies' Hours</a></li>
+              <li><a href="/pages/contactus.html">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">
               <i class="fa fa-bars"></i>
@@ -29,17 +25,9 @@ class SpecialHeader extends HTMLElement {
   }
 }
 
-
-//   footer
-
 class SpecialFooter extends HTMLElement {
   connectedCallback() {
-    const path = window.location.pathname;
-    const isInPagesFolder = path.includes('/pages/');
-    const prefix = isInPagesFolder ? '../' : '';
-
     this.innerHTML = `
-      <!-- Call to Action Section -->
       <section class="section cta">
         <div class="container">
           <h2>Ready to Transform Your Life?</h2>
@@ -47,13 +35,12 @@ class SpecialFooter extends HTMLElement {
             Take the first step towards a healthier, stronger you. Join Zie Core Fitness today and experience the difference with our expert trainers, top-notch facilities, and supportive community.
           </p>
           <div class="hero-btns">
-            <a href="${prefix}pages/contactus.html#Contact-form" class="btn btn-primary">Join Now</a>
-            <a href="${prefix}pages/contactus.html#Contact-form" class="btn btn-secondary">Enquiry</a>
+            <a href="/pages/contactus.html#Contact-form" class="btn btn-primary">Join Now</a>
+            <a href="/pages/contactus.html#Contact-form" class="btn btn-secondary">Enquiry</a>
           </div>
         </div>
       </section>
 
-      <!-- Footer -->
       <footer id="contact">
         <div class="container">
           <div class="footer-grid">
@@ -71,11 +58,11 @@ class SpecialFooter extends HTMLElement {
             <div class="footer-col">
               <h3>Quick Links</h3>
               <ul class="footer-links">
-                <li><a href="${prefix}index.html">Home</a></li>
-                <li><a href="${prefix}pages/about.html">About</a></li>
-                <li><a href="${prefix}pages/service.html">Services</a></li>
-                <li><a href="${prefix}pages/ladies-hours.html">Ladies' Hours</a></li>
-                <li><a href="${prefix}pages/contactus.html">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="/pages/service.html">Services</a></li>
+                <li><a href="/pages/ladies-hours.html">Ladies' Hours</a></li>
+                <li><a href="/pages/contactus.html">Contact</a></li>
               </ul>
             </div>
 
@@ -109,9 +96,6 @@ class SpecialFooter extends HTMLElement {
     `;
   }
 }
-  
-  // Define the custom element
-  customElements.define('special-header', SpecialHeader);
-  customElements.define('special-footer', SpecialFooter);
 
-  
+customElements.define('special-header', SpecialHeader);
+customElements.define('special-footer', SpecialFooter);
