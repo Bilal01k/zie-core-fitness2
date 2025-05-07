@@ -59,10 +59,10 @@ class SpecialFooter extends HTMLElement {
               <h3>Quick Links</h3>
               <ul class="footer-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/service.html">Services</a></li>
-                <li><a href="pages/ladies-hours.html">Ladies' Hours</a></li>
-                <li><a href="pages/contactus.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="ladies-hours.html">Ladies' Hours</a></li>
+                <li><a href="contactus.html">Contact</a></li>
               </ul>
             </div>
 
