@@ -35,8 +35,8 @@ class SpecialFooter extends HTMLElement {
             Take the first step towards a healthier, stronger you. Join Zie Core Fitness today and experience the difference with our expert trainers, top-notch facilities, and supportive community.
           </p>
           <div class="hero-btns">
-            <a href="/pages/contactus.html#Contact-form" class="btn btn-primary">Join Now</a>
-            <a href="/pages/contactus.html#Contact-form" class="btn btn-secondary">Enquiry</a>
+            <a href="contactus.html#Contact-form" class="btn btn-primary">Join Now</a>
+            <a href="contactus.html#Contact-form" class="btn btn-secondary">Enquiry</a>
           </div>
         </div>
       </section>
